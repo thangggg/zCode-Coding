@@ -17,7 +17,7 @@ string substractTwoString(string a, string b){
     if ( isBigger(a, b) == b) swap(a, b);
     int la = a.length();
     while(b.length() != la) b = '0' + b;
-    string res = "";
+    string res = ""; 
     for(int i = la - 1, carry = 0; i >= 0; --i){
         int t = (a[i] - '0') - (b[i] - '0') - carry;
         if ( t < 0){
